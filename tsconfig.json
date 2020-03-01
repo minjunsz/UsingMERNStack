@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "es6",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "isolatedModules": true,
+    "declaration": false,
+    "jsx": "react",
+    "sourceMap": true,
+    "noLib": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "compileOnSave": false,
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
