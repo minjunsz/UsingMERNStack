@@ -5,7 +5,6 @@ const CreateTodo: FC<{}> = ({}) => {
   const [desc, setDesc] = React.useState<string | number | undefined>("");
   const [resp, setResp] = React.useState<string | number | undefined>("");
   const [prior, setPrior] = React.useState<string | number | undefined>("low");
-  const [isComplete, setisComplete] = React.useState(false);
 
   const handleChange = (
     e: React.FormEvent<HTMLInputElement>,
@@ -20,6 +19,7 @@ const CreateTodo: FC<{}> = ({}) => {
   };
 
   const handleSubmit: React.FormEventHandler = e => {
+    e.preventDefault();
     setDesc("");
     setResp("");
     setPrior("low");
@@ -63,7 +63,7 @@ const CreateTodo: FC<{}> = ({}) => {
             onChange={handleChange}
           />
         </Form.Group>
-        <Form.Button type="submit">Submit</Form.Button>
+        <Form.Button type="submit">Create Todo</Form.Button>
       </Form>
     </Fragment>
   );
