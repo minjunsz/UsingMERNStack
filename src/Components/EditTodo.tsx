@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 const EditTodo: FC<{}> = ({}) => {
-  return <div></div>;
+  return <div>EditTodo</div>;
 };
 
 export default EditTodo;
