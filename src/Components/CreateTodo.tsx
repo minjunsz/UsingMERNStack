@@ -1,5 +1,9 @@
-import React, { FC, Fragment, FormEvent } from "react";
+import React, { FC, Fragment } from "react";
 import { Header, Form, FormCheckboxProps } from "semantic-ui-react";
+
+/*
+ * TODO: 입력시 모든 칸이 함께 렌더되는 것을 방지
+ */
 
 const CreateTodo: FC<{}> = ({}) => {
   const [desc, setDesc] = React.useState<string | number | undefined>("");

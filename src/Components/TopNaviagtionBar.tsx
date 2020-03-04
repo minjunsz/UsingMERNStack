@@ -1,4 +1,4 @@
-import React, { FC, memo } from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
 
@@ -15,5 +15,4 @@ const TopNavigationBar: FC = () => (
     </Menu.Item>
   </Menu>
 );
-
-export default memo(TopNavigationBar);
+export default TopNavigationBar;
